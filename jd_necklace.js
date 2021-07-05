@@ -1,7 +1,3 @@
-/**
-更新地址：https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_necklace_new.js 
- */
- 
 const $ = new Env('点点券二代目');
 const https = require('https');
 const fs = require('fs/promises');
