@@ -129,7 +129,7 @@ if __name__ == '__main__':
         isv4 = True
         if not os.path.isfile(f'{env}/config/config.sh'):  # v4-bot 容器内
             env = '/jd'
-    cron = '此处填写' # 此处 V4 用户需要自行设置 cron 表达式，否则程序自动设置为 jd_dreamFactory.js 的运行时间
+    cron = '0 9 * * *' # 此处 V4 用户需要自行设置 cron 表达式，否则程序自动设置为 jd_dreamFactory.js 的运行时间
     if 'jd' in env:
         if len(cron) < 9:
             cron = findCrontab()
