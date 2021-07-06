@@ -119,3 +119,5 @@
 16 7 * * * node /scripts/jd_ddnc_farmpark.js >> /scripts/logs/jd_ddnc_farmpark.log 2>&1
 # 送豆得豆
 15 2,14,22 * * * node /scripts/jd_sendBeans.js >> /scripts/logs/jd_sendBeans.log 2>&1
+# 京东签到图形验证
+14 10 * * * node /scripts/jd_sign.js >> /scripts/logs/jd_sign.log 2>&1
