@@ -12,6 +12,14 @@
 0 0-23/4 * * * node /scripts/jd_mohe.js >> /scripts/logs/jd_mohe.log 2>&1
 # 女装盲盒 活动时间：2021-7-1至2021-7-31
 35 7 * * * node /scripts/jd_nzmh.js >> /scripts/logs/jd_nzmh.log 2>&1
+# 京东极速版红包 活动时间：2021-6-7至2021-7-15
+11 0,17 * * * node /scripts/jd_speed_redpocke.js >> /scripts/logs/jd_speed_redpocke.log 2>&1
+# 欧洲狂欢杯 活动时间：###
+0 5,10,11 * * * node /scripts/jd_europeancup.js >> /scripts/logs/jd_europeancup.log 2>&1
+# 特物Z|万物皆可国创 活动时间：###
+3 0,13 * * * node /scripts/jd_superBrand.js >> /scripts/logs/jd_superBrand.log 2>&1
+# 小鸽有礼-每日抽奖 活动时间：2021-06-16至2021-07-30
+13 1,22,23 * * * node /scripts/jd_daily_lottery.js >> /scripts/logs/jd_daily_lottery.log 2>&1
 ##############长期活动##############
 # 签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
