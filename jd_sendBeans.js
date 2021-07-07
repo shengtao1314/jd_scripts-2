@@ -2,7 +2,6 @@
 送豆得豆
 cron 15 2,14,22 * * * sendBeans.js
 更新时间：2021-6-19 23点
-
 活动入口：京东APP-京豆-送豆得豆
 已支持IOS双京东账号,Node.js支持N个京东账号
 脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
@@ -34,11 +33,8 @@ $.toStr = (t, e = null) => {
     }
 }
 const notify = $.isNode() ? require("./sendNotify") : "";
-
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
-
 const sck = $.isNode() ? "set-cookie" : "Set-Cookie";
-
 let helpCookieNo = process.env.SendBean_helpCookieNo?process.env.SendBean_helpCookieNo:1
 let helpMe =process.env.SendBean_helpMe?false:true
 
