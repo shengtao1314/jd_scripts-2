@@ -16,6 +16,8 @@
 11 0,17 * * * node /scripts/jd_speed_redpocke.js >> /scripts/logs/jd_speed_redpocke.log 2>&1
 # 欧洲狂欢杯 活动时间：###
 0 5,10,11 * * * node /scripts/jd_europeancup.js >> /scripts/logs/jd_europeancup.log 2>&1
+# 燃动夏季 活动时间：2021-7-8至2021-8-8
+12 9-17/2 * * * node /scripts/jd_summer_movement.js >> /scripts/logs/jd_summer_movement.log 2>&1
 ##############长期活动##############
 # 签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
@@ -126,7 +128,7 @@
 # 送豆得豆
 15 2,14 * * * node /scripts/jd_sendBeans.js >> /scripts/logs/jd_sendBeans.log 2>&1
 # 京东签到图形验证
-14 10 * * * node /scripts/jd_sign.js >> /scripts/logs/jd_sign.log 2>&1
+14 10 * * * node /scripts/jd_sign_graphics.js >> /scripts/logs/jd_sign_graphics.log 2>&1
 # 旺旺乐园
 0 */1 * * * node /scripts/jd_joy_park.js >> /scripts/logs/jd_joy_park.log 2>&1
 # 财富岛提现
